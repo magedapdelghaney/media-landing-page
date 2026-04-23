@@ -45,7 +45,7 @@ src/app/components/
 ## 🎨 Customizations
 - **Animations**: Solutions hover/interval scale.
 - **3D**: Interactive stats Three.js canvas.
-- **Notes**: [NOTES.md](./NOTES.md)
+- **Notes**: [task-notes.md](./task-notes.md)
 
 
 
