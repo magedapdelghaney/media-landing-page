@@ -1,0 +1,48 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page-bg {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0b1026 0%, #1a2250 45%, #111735 100%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 28px;
+}
+
+app-media {
+  margin-bottom: 14px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.section-shell {
+  padding: 52px 0;
+}
+
+@media (max-width: 768px) {
+  .section-shell {
+    padding: 40px 0;
+  }
+
+  .container {
+    padding-inline: 16px;
+  }
+}

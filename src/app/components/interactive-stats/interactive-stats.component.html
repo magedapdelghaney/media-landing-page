@@ -1,0 +1,33 @@
+<div class="stats-container">
+  <h3>Live Stats</h3>
+  <div class="stats-grid">
+    <div class="stat-card" (mousemove)="onCanvasMouseMove(0, $event)">
+      <canvas #threeCanvas class="three-canvas"></canvas>
+      <div class="stat-label">
+        <span class="counter" data-value="12450">0K+</span>
+        <p>Campaigns</p>
+      </div>
+    </div>
+    <div class="stat-card" (mousemove)="onCanvasMouseMove(1, $event)">
+      <canvas #threeCanvas class="three-canvas"></canvas>
+      <div class="stat-label">
+        <span class="counter" data-value="248">248%</span>
+        <p>ROI</p>
+      </div>
+    </div>
+    <div class="stat-card" (mousemove)="onCanvasMouseMove(2, $event)">
+      <canvas #threeCanvas class="three-canvas"></canvas>
+      <div class="stat-label">
+        <span class="counter" data-value="1560000">1.56M</span>
+        <p>Reach</p>
+      </div>
+    </div>
+    <div class="stat-card" (mousemove)="onCanvasMouseMove(3, $event)">
+      <canvas #threeCanvas class="three-canvas"></canvas>
+      <div class="stat-label">
+        <span class="counter" data-value="78">78</span>
+        <p>Active</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<section id="solutions" class="solutions section-shell">
+  <div class="solutions-inner">
+    <p class="eyebrow">WHY MEDIA ALA CARTE?</p>
+
+    <h2 class="solutions-title">
+      Our All <span class="highlight">Solution</span> for
+      <br />
+      Smarter Media Buying
+    </h2>
+
+    <div class="solutions-grid">
+      <article class="solution-card featured-card">
+        <img [src]="featuredImage" alt="Solutions featured" />
+        <div class="featured-overlay">
+          <p>We simplify media buying with data, automation, and collaboration to maximize ROI</p>
+          <button type="button">Get Started</button>
+        </div>
+      </article>
+
+      <article
+        class="solution-card top-right-card"
+        [class.dark-card]="cards[0].variant !== 'highlight'"
+        [class.highlight-card]="cards[0].variant === 'highlight'"
+      >
+        <span class="icon">{{ cards[0].icon }}</span>
+        <h3>{{ cards[0].title }}</h3>
+        <p>{{ cards[0].description }}</p>
+        <span class="arrow">↗</span>
+      </article>
+      @for (card of cards; track $index) {
+
+        <article
+        class="solution-card bottom-card"
+        [class.dark-card]="card.variant !== 'highlight'"
+        [class.highlight-card]="card.variant === 'highlight'"
+
+      >
+        <span class="icon">{{ card.icon }}</span>
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.description }}</p>
+        <span class="arrow">↗</span>
+      </article>
+
+      }
+
+    </div>
+  </div>
+</section>

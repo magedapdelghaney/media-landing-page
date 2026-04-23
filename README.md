@@ -1,27 +1,51 @@
-# MediaLandingPage
+# Media A La Carte - Landing Page
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+Modern responsive landing page for media buying platform, built with Angular 17 + Three.js.
 
-## Development server
+## 🚀 Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Hero Media**: Video poster + CTA.
+- **Solutions**: Grid cards with hover scale animations & staggered interval pulse.
+- **Services**: Feature grid.
+- **Statistics**: Clean counters (110+ agencies, 1M advertisers, 98.99% transactions).
+- **Interactive Stats**: Three.js 3D graphs with floating statues.
+- **Header/Footer**: Big responsive logos, sticky nav.
+- **Modern CSS**: Clamp, grid, gradients, keyframes.
+- **CDN Images**: Unsplash featured solution image.
 
-## Code scaffolding
+## 📱 Responsive
+- Desktop: 12-col grid.
+- Tablet/Mobile: Stack, adjust heights.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠 Tech Stack
+- Angular 17 standalone components (@for loops).
+- Three.js for 3D interactions.
+- Pure CSS animations/transitions.
 
-## Build
+## 🚀 Quick Start
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Node.js v18+** (Angular 17 req): `nvm install 18 && nvm use 18`
+2. Install deps: `npm install`
+3. Dev server: `ng serve` (localhost:4200)
+4. Build: `ng build`
 
-## Running unit tests
+## 📁 Structure
+```
+src/app/components/
+├── header/
+├── about/
+├── media/
+├── services/
+├── solutions/
+├── statistics/
+├── interactive-stats/ (3D)
+├── footer/
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🎨 Customizations
+- **Animations**: Solutions hover/interval scale.
+- **3D**: Interactive stats Three.js canvas.
+- **Notes**: [NOTES.md](./NOTES.md)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

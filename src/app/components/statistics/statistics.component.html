@@ -1,0 +1,10 @@
+<section id="statistics" class="statistics section-shell">
+  <div class="stats-band">
+    @for (stat of stats; track $index) {
+    <article class="stat">
+      <h3>{{ stat.value }}</h3>
+      <p>{{ stat.label }}</p>
+    </article>
+    }
+  </div>
+</section>

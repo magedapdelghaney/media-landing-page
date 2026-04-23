@@ -1,0 +1,48 @@
+<footer id="footer" class="footer section-shell">
+  <div class="container footer-main">
+    <section class="footer-brand">
+        <img src="assets/media-logo.png" alt="Media A La Carte" class="brand-logo" />
+      <p class="tagline">{{ tagline }}</p>
+
+      <div class="social-list">
+        @for (social of socialLinks; track social.label) {
+          <a [href]="social.href" [attr.aria-label]="social.label" class="social-btn">{{ social.icon }}</a>
+        }
+      </div>
+    </section>
+
+    <section class="footer-links-col">
+      <h4>Useful Links</h4>
+      <div class="links-grid">
+        <div class="links-column">
+          @for (link of quickLinksLeft; track link.label) {
+            <a [href]="link.href">{{ link.label }}</a>
+          }
+        </div>
+        <div class="links-column">
+          @for (link of quickLinksRight; track link.label) {
+            <a [href]="link.href">{{ link.label }}</a>
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-contact">
+      <h4>Contact Us</h4>
+
+      <div class="contact-row">
+        <span class="contact-icon location" aria-hidden="true">📍</span>
+        <p>
+          @for (line of addressLines; track line) {
+            <span>{{ line }}</span>
+          }
+        </p>
+      </div>
+
+      <div class="contact-row">
+        <span class="contact-icon mail" aria-hidden="true">✉</span>
+        <a href="mailto:{{ email }}">{{ email }}</a>
+      </div>
+    </section>
+  </div>
+</footer>
